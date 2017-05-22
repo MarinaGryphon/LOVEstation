@@ -10,6 +10,7 @@ for x = 1, 10 do --generate the default wmap ( world map )
 end
 
 function map.floodfill( self, x, y ) --orthogonal flood fill
+	if not self:inBounds(x,y) then return end
 	if self.wmap[x][y].tile.opaque then 	
 		 -- don't add opaque tiles or search from them
 		return;
