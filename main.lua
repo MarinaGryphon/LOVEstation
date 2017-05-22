@@ -170,7 +170,7 @@ function love.draw()
 			v:draw( 64 );
 		end
 	end
-	
+	--[[
 	love.graphics.setColor( 0, 255, 255 );
 	if world.tmp then
 		for k,v in pairs(world.tmp) do
@@ -186,6 +186,7 @@ function love.draw()
 			end
 		end
 	end
+	--]]
 	
 	love.graphics.translate( camera.x*64, camera.y*64 );
 	
